@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --clr-green: hsl(154, 59%, 51%);
+    --clr-blue: hsl(248, 32%, 49%);
+    --clr-grayishBlue: hsl(246, 25%, 77%);
+    --clr-red: hsl(0, 100%, 74%) ;
+}
+
+.main-container{
+    background: var(--clr-red);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flexbox-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(70%);
+    margin-inline: auto;
+}
+.col-1{
+    width: 49%;
+    gap: 1.5rem;
+}
+/*Description*/
+.info-content{
+    color: #fff;
+    padding: 0 1rem;
+}
+.info-content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+.info-content p{
+    line-height: 1.5rem;
+}
+/*Form*/
+.form-content{
+    text-align: center;
+}
+.free-trial{
+    background: var(--clr-blue);
+    margin-bottom: 1rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+.bold-text{
+    font-weight: bold;
+}
+.form{
+    background: #fff;
+    padding: 2rem 0;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+.form-group{
+    margin-bottom: 1rem;
+   
+}
+.form-group input{
+    font-size: 0.8rem;
+    padding: 1rem 1rem;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 5px;
+    outline: none;
+    border: 0.5px solid lightgray;
+}
+.form-group input:focus{
+    border: 1px solid black;
+}
+/* Claim Button */
+.submit-btn{
+    padding: 1rem;
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+    background: var(--clr-green);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: 600;
+}
+.consent-term{
+    font-size: 0.7rem;
+    color: lightgray;
+}
+.red-text{
+    color: var(--clr-red);
+    font-weight: 600;
+}
+
+@media(max-width: 935px){
+    .main-container{
+        min-height: 140vh;
+    }
+    .flexbox-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .info-content{
+        margin: 2.5rem 0;
+    }
+    .col-1 {
+        width: 100%;
+    }
+}
+@media(max-width: 590px){
+    .main-container{
+        min-height: 190vh;
+    }
+}
