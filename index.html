@@ -19,7 +19,7 @@
     <div class="main-container">
       <div class="flexbox-container">
         <div class="info-content col-1">
-          <h1>Learn how to speak another language by listening to others</h1>
+          <h1>Learn how to code by watching others</h1>
           <p>
             See how experienced developers solve problems in real-time. Watching
             scripted tutorials is great but understanding how developers think
@@ -34,21 +34,45 @@
             </p>
           </div>
 
-          <form action="" method="POST" class="form">
+          <form class="form" id="form">
             <div class="firstname form-group">
-              <input type="text" name="firstname" placeholder="First Name" />
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="First Name"
+              />
+              <p class="error"></p>
             </div>
             <div class="lastname form-group">
-              <input type="text" name="lastname" placeholder="Last Name" />
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Last Name"
+              />
+              <p class="error"></p>
             </div>
             <div class="email form-group">
-              <input type="email" name="email" placeholder="Email Address" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <p class="error"></p>
             </div>
             <div class="password form-group">
-              <input type="password" name="password" placeholder="Password" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+              <p class="error"></p>
             </div>
             <div class="btn form-group">
-              <button type="submit" class="submit-btn">
+              <button type="submit" class="submit-btn" id="submit-btn">
                 Claim your free trial
               </button>
             </div>
@@ -60,5 +84,6 @@
         </div>
       </div>
     </div>
+    <script src="/js/main.js"></script>
   </body>
 </html>
